@@ -1,0 +1,22 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.0.2",
+    "vuepress-theme-reform": "^1.4.0"
+  },
+  "dependencies": {
+    "vuepress-theme-reco": "^1.0.2",
+    "vuepress-theme-tassel": "^1.1.9"
+  }
+}
