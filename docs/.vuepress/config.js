@@ -71,6 +71,7 @@ module.exports = {
           title: '面试题',
           children: [
             ['/article/Vue/interview/Vue的数据代理','Vue的数据代理?'],
+            ['/article/Vue/interview/vue的生命周期','vue的生命周期'],
           ],
         },
         {
