@@ -29,6 +29,7 @@ module.exports = {
           { text: 'Vue', link: '/article/Vue/' },
         ]
       },
+      {text: '工作分享', link: '/work/'}
     ],
     //侧边栏相应配置
     sidebar: {
@@ -83,13 +84,27 @@ module.exports = {
           ]
         },
       ],
+      //工作文章
+        '/work/': [
+        ['', '介绍'],
+        {
+          title: 'bug',
+          children: [
+            ['/work/pit/watch更新不能直接操作dom','watch更新不能直接操作dom'],
+          ],
+        },
+        {
+          title: '小技巧',
+          children: [
+            ['/work/skill/better-scroll实现左右同步滑动','better-scroll实现左右同步滑动'],
+          ]
+        },
+      ],
       '/': [
       ]
     },
     //取消标题显示二级页面
     sidebarDepth: '0',
-    //是否在每个代码块显示行号
-    lineNumbers: true,
     //头部显示logo图片
     logo:'/head.jpg',
     //GitHub更新时间
@@ -100,8 +115,12 @@ module.exports = {
       //评价功能
       appId: '7j1opqjclKwtzwDfYqBFtDaF-gzGzoHsz',// your appId
       appKey: 'QL7DaJxnQrvG4X5zwHOEzgeR', // your appKey
+      placeholder: '在这里输入您的评论吧!'
     }
   },
   theme: 'reco',
+  markdown: {
+    lineNumbers: true
+  }
 }
 
