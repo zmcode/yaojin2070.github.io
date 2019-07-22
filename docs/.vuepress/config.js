@@ -72,6 +72,8 @@ module.exports = {
           children: [
             ['/article/Vue/interview/Vue的数据代理','Vue的数据代理?'],
             ['/article/Vue/interview/vue的生命周期','vue的生命周期'],
+            ['/article/Vue/interview/computed和watch的区别','computed和watch的区别'],
+            ['/article/Vue/interview/MVC与MVVM的区别','MVC与MVVM的区别'],
           ],
         },
         {
@@ -93,9 +95,12 @@ module.exports = {
     //GitHub更新时间
     lastUpdated: 'Last Updated',
     author: '遥近',
-    // valineConfig: {
-    //   visitor: true
-    // }
+    valineConfig: {
+      visitor: true,
+      //评价功能
+      appId: '7j1opqjclKwtzwDfYqBFtDaF-gzGzoHsz',// your appId
+      appKey: 'QL7DaJxnQrvG4X5zwHOEzgeR', // your appKey
+    }
   },
   theme: 'reco',
 }
