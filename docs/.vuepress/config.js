@@ -15,7 +15,7 @@ module.exports = {
         text: '基本用法',
         items: [
           { text: 'HTML&&CSS', link: '/note/html&&css/'},
-          // { text: 'JavaScript', link: '/note/JavaScript/'},
+          { text: 'JavaScript', link: '/note/JavaScript/'},
           // { text: 'React', link: '/note/React' },
           // { text: 'Vue', link: '/note/Vue' },
         ]
@@ -37,7 +37,7 @@ module.exports = {
       '/note/html&&css/': [
         ['', '介绍'],
         {
-          title: '基本用法',
+          title: '基本内容',
           children: [
             ['/note/html&&css/basic/HelloWord','HelloWord'],
           ],
@@ -49,13 +49,26 @@ module.exports = {
           ]
         },
       ],
+      //JavaScript笔记
+      '/note/JavaScript/': [
+        ['', '介绍'],
+        {
+          title: '基本内容',
+          children: [
+            ['/note/JavaScript/basic/什么是构造函数','什么是构造函数'],
+            ['/note/JavaScript/basic/了解语法糖','了解语法糖']
+          ],
+        },
+      ],
       //javascript文章
       '/article/JavaScript/': [
         ['', '介绍'],
         {
-          title: '面试题',
+          title: '文章',
           children: [
-            ['/article/JavaScript/interview/new','New关键字到底做了些什么?'],
+            ['/article/JavaScript/interview/New 关键字到底做了些什么','New关键字到底做了些什么?'],
+            ['/article/JavaScript/interview/什么是闭包','什么是闭包?'],
+            ['/article/JavaScript/interview/谈谈原型链','谈谈原型链']
           ],
         },
         {
@@ -69,7 +82,7 @@ module.exports = {
       '/article/Vue/': [
         ['', '介绍'],
         {
-          title: '面试题',
+          title: '文章',
           children: [
             ['/article/Vue/interview/Vue的数据代理','Vue的数据代理?'],
             ['/article/Vue/interview/vue的生命周期','vue的生命周期'],
