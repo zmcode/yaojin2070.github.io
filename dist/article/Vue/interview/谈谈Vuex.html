@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>谈谈Vuex | 遥近个人博客</title>
+    <meta name="description" content="">
+    <link rel="icon" href="/logo.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.9260abbd.css" as="style"><link rel="preload" href="/assets/js/app.109fcf6a.js" as="script"><link rel="preload" href="/assets/js/3.a0d8fb69.js" as="script"><link rel="preload" href="/assets/js/1.52e46082.js" as="script"><link rel="preload" href="/assets/js/20.e55481a3.js" as="script"><link rel="prefetch" href="/assets/js/10.d3a42576.js"><link rel="prefetch" href="/assets/js/11.638b89c6.js"><link rel="prefetch" href="/assets/js/12.90b52ce8.js"><link rel="prefetch" href="/assets/js/13.ba849e4a.js"><link rel="prefetch" href="/assets/js/14.07f17046.js"><link rel="prefetch" href="/assets/js/15.1d77788d.js"><link rel="prefetch" href="/assets/js/16.c6a27d66.js"><link rel="prefetch" href="/assets/js/17.7df37997.js"><link rel="prefetch" href="/assets/js/18.8f767dcb.js"><link rel="prefetch" href="/assets/js/19.4dda490f.js"><link rel="prefetch" href="/assets/js/21.669b8706.js"><link rel="prefetch" href="/assets/js/22.b65d8efa.js"><link rel="prefetch" href="/assets/js/23.e2e2ff53.js"><link rel="prefetch" href="/assets/js/24.8062f3cc.js"><link rel="prefetch" href="/assets/js/25.027bf98c.js"><link rel="prefetch" href="/assets/js/26.1121d115.js"><link rel="prefetch" href="/assets/js/27.999345a8.js"><link rel="prefetch" href="/assets/js/28.88c9d495.js"><link rel="prefetch" href="/assets/js/29.70910cc9.js"><link rel="prefetch" href="/assets/js/30.f42934b6.js"><link rel="prefetch" href="/assets/js/31.7c05ee3a.js"><link rel="prefetch" href="/assets/js/32.d80f78b0.js"><link rel="prefetch" href="/assets/js/33.e26a175f.js"><link rel="prefetch" href="/assets/js/34.a8e0dbd5.js"><link rel="prefetch" href="/assets/js/35.eeb51878.js"><link rel="prefetch" href="/assets/js/4.cc0df46c.js"><link rel="prefetch" href="/assets/js/5.88f9a153.js"><link rel="prefetch" href="/assets/js/6.225ae989.js"><link rel="prefetch" href="/assets/js/7.4cdc0b6b.js"><link rel="prefetch" href="/assets/js/8.53909f44.js"><link rel="prefetch" href="/assets/js/9.04bc2374.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9260abbd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/head.jpg" alt="遥近个人博客" class="logo"> <span class="site-name">遥近个人博客</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      基本用法
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/html&amp;&amp;css/" class="nav-link"><i class="iconfont undefined"></i>
+  HTML&amp;&amp;CSS
+</a></li><li class="dropdown-item"><!----> <a href="/note/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      我的文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/article/Vue/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/work/" class="nav-link"><i class="iconfont undefined"></i>
+  工作分享
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      基本用法
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/html&amp;&amp;css/" class="nav-link"><i class="iconfont undefined"></i>
+  HTML&amp;&amp;CSS
+</a></li><li class="dropdown-item"><!----> <a href="/note/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      我的文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/article/Vue/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/work/" class="nav-link"><i class="iconfont undefined"></i>
+  工作分享
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/article/Vue/" class="sidebar-link">介绍</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>文章</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/article/Vue/interview/Vue的数据代理.html" class="sidebar-link">Vue的数据代理?</a></li><li><a href="/article/Vue/interview/vue的生命周期.html" class="sidebar-link">vue的生命周期</a></li><li><a href="/article/Vue/interview/computed和watch的区别.html" class="sidebar-link">computed和watch的区别</a></li><li><a href="/article/Vue/interview/MVC与MVVM的区别.html" class="sidebar-link">MVC与MVVM的区别</a></li><li><a href="/article/Vue/interview/谈谈Vuex.html" class="active sidebar-link">谈谈Vuex</a></li><li><a href="/article/Vue/interview/data必须是函数.html" class="sidebar-link">data必须是函数</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>原理</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>谈谈Vuex</h1> <hr> <div data-v-fa0e39f2><i class="iconfont reco-account" data-v-fa0e39f2><span data-v-fa0e39f2>遥近</span></i> <!----> <span id="/article/Vue/interview/%E8%B0%88%E8%B0%88Vuex.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-2e99e05a data-v-fa0e39f2><i class="iconfont reco-eye" style="margin-right: .5rem" data-v-2e99e05a></i> <a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;" data-v-2e99e05a></a></span> <!----></div></div> <div class="content__default"><blockquote><p>Vuex,它是一个集中式存储和管理Vue所有组件的状态,并且可以通过相应规则改变状态的插件</p></blockquote> <p>Vuex主要包含5个属性: <code>state</code>、 <code>getter</code>、 <code>mutation</code>、 <code>action</code>、 <code>moudle</code>,它们都是对象!</p> <p><code>state</code> : 它是专门用来存储和管理数据的,可以通过this.$store.state来读取数据</p> <p><code>getter</code> : 您可以认为它是store的计算属性, 这样您就可以使用 <a href="https://www.yjdzm.com/article/Vue/interview/computed%E5%92%8Cwatch%E7%9A%84%E5%8C%BA%E5%88%AB.html" target="_blank" rel="noopener noreferrer">计算属性<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 一样, 通过state里的某些数据来动态的创建一个新的数据,只有当我的state中的数据发生变化,我才会相应改变,它是具有依懒性以及缓存性的,您可以通过$store.getters来触发某个getter</p> <p><code>mutation</code> : 它是改变我state数据的唯一方法,mutation里面的属性都有一个字符串的事件类型(作为key)和一个回调函数(作为value)来进行数据的更改
+;
+<code>action</code> : 通过它来提交mutation间接变更状态,一般用来执行一些异步操作</p> <p><code>moudle</code> : 它的作用在于将我的store分割成模块,每个模块独自管理<code>state</code>、 <code>getter</code>、 <code>mutation</code>、 <code>action</code></p> <p>当我的组件需要更新某个数据的时候,通过调用dispatch(某个aciton) 执行异步更新操作,action通过commit方法触发我的mutation方法来对数据进行更改,数据更改完毕,通过渲染,返回给组件进行展示!</p> <p>想知道更多 <a href="https://www.yjdzm.com/note/Vue/basic/Vuex%E7%9A%84%E4%BD%BF%E7%94%A8.html" target="_blank" rel="noopener noreferrer">Vuex的使用<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ,这里有详细的解释!</p> <div class="language-! line-numbers-mode"><pre class="language-text"><code>注意:mutation里面回调函数必须是同步函数,因为我们需要明确地追踪到状态的变化,这样您就可以通过devtool调试工具看到每次数据发生的详细变化了,反之则亦然!
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div> <!----> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/article/Vue/interview/MVC与MVVM的区别.html" class="prev">
+          MVC与MVVM的区别
+        </a></span> <span class="next"><a href="/article/Vue/interview/data必须是函数.html">
+          data必须是函数
+        </a>
+        →
+      </span></p></div> </main> <div class="valine-wrapper" data-v-0162251c><div id="valine" data-v-0162251c></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-d0bfeaa4 data-v-d0bfeaa4><i class="iconfont reco-up" data-v-d0bfeaa4></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.109fcf6a.js" defer></script><script src="/assets/js/3.a0d8fb69.js" defer></script><script src="/assets/js/1.52e46082.js" defer></script><script src="/assets/js/20.e55481a3.js" defer></script>
+  </body>
+</html>

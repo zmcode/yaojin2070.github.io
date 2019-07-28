@@ -17,7 +17,7 @@ module.exports = {
           { text: 'HTML&&CSS', link: '/note/html&&css/'},
           { text: 'JavaScript', link: '/note/JavaScript/'},
           // { text: 'React', link: '/note/React' },
-          // { text: 'Vue', link: '/note/Vue' },
+          { text: 'Vue', link: '/note/Vue/' },
         ]
       },
       {
@@ -33,6 +33,8 @@ module.exports = {
     ],
     //侧边栏相应配置
     sidebar: {
+
+
       //htmlcss笔记
       '/note/html&&css/': [
         ['', '介绍'],
@@ -49,6 +51,8 @@ module.exports = {
           ]
         },
       ],
+
+
       //JavaScript笔记
       '/note/JavaScript/': [
         ['', '介绍'],
@@ -60,6 +64,21 @@ module.exports = {
           ],
         },
       ],
+
+
+      //Vue笔记
+      '/note/Vue/': [
+        ['', '介绍'],
+        {
+          title: '基本内容',
+          children: [
+            ['/note/Vue/basic/Vuex的使用','Vuex的使用'],
+            ['/note/Vue/basic/name的作用','name的作用']
+          ],
+        },
+      ],
+
+
       //javascript文章
       '/article/JavaScript/': [
         ['', '介绍'],
@@ -78,6 +97,8 @@ module.exports = {
           ]
         },
       ],
+
+
       //vue文章
       '/article/Vue/': [
         ['', '介绍'],
@@ -88,6 +109,8 @@ module.exports = {
             ['/article/Vue/interview/vue的生命周期','vue的生命周期'],
             ['/article/Vue/interview/computed和watch的区别','computed和watch的区别'],
             ['/article/Vue/interview/MVC与MVVM的区别','MVC与MVVM的区别'],
+            ['/article/Vue/interview/谈谈Vuex','谈谈Vuex'],
+            ['/article/Vue/interview/data必须是函数','data必须是函数'],
           ],
         },
         {
@@ -97,6 +120,9 @@ module.exports = {
           ]
         },
       ],
+
+
+
       //工作文章
         '/work/': [
         ['', '介绍'],
@@ -113,6 +139,9 @@ module.exports = {
           ]
         },
       ],
+
+
+
       '/': [
       ]
     },
