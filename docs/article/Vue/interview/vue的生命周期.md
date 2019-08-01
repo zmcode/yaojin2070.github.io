@@ -41,7 +41,7 @@ date: 2019-07-21
 
 ## 检查是否有el属性、template等 ##
 
-<img src='/article/vue/el.png'>
+<img src='/article/Vue/el.png'>
 
 到了这里vue会检查我的配置对象中是否有el属性,如果有的话,它就会继续判断是否有template,它接受的是字符串作为参数,可以是#id、模版字符串、dom元素，然后通过render函数进行编译，如果没有template那么就会将el以及其子内容作为模板进行编译!
 
@@ -61,7 +61,7 @@ date: 2019-07-21
 
 ## 进行挂载并且给我的vm添加$el属性 ##
 
-<img src='/article/vue/mounting.png'>
+<img src='/article/Vue/mounting.png'>
 
 这里主要是将我的编译好的模板挂载到页面上,并且给我的vm添加$el属性,这样您就可以通过this.$el的方式来读取我最终渲染的DOM结构了
 
@@ -75,7 +75,7 @@ date: 2019-07-21
 当我的vue中的data数据发生变化的时候,就会执行这个函数,此时需要注意的是我的页面还没有更新的,只是我的虚拟DOM已经配置了,此时我的data数据已经是我更改的数据!
 
 ## 通过diff算法渲染虚拟DOM ##
-<img src='/article/vue/Updating.png'>
+<img src='/article/Vue/Updating.png'>
 
 到了这里,将会重新渲染虚拟DOM,通过diff算法来对比我的节点之间的差异更新真实的DOM
 这样就能提高性能!
@@ -94,7 +94,7 @@ date: 2019-07-21
 
 ## 进行卸载等操作 ##
 	
-<img src='/article/vue/destroy.png'>
+<img src='/article/Vue/destroy.png'>
 
 在这个阶段,会卸载子组件,解除观察,卸载事件监听
 

@@ -87,7 +87,10 @@ module.exports = {
           children: [
             ['/article/JavaScript/interview/New 关键字到底做了些什么','New关键字到底做了些什么?'],
             ['/article/JavaScript/interview/什么是闭包','什么是闭包?'],
-            ['/article/JavaScript/interview/谈谈原型链','谈谈原型链']
+            ['/article/JavaScript/interview/谈谈原型链','谈谈原型链'],
+            ['/article/JavaScript/interview/call、apply、bind的区别','call、apply、bind的区别'],
+            ['/article/JavaScript/interview/谈谈this的指向','谈谈this的指向'],
+            ['/article/JavaScript/interview/防抖和节流实现','防抖和节流实现'],
           ],
         },
         {
