@@ -178,7 +178,7 @@ export default {
 
 这样是最简单改变我state数据的方式,可是它有一个弊端,我无法通过devTools上来观测到我状态的更新数据
 
-<img src='/article/vue/devTools1.png'>
+<img src='/note/Vue/devTools1.png'>
 
 
 此时我们就可以通过commit方法来进行更新了,它可以触发对应的mutation方法来触发更新(通过commit更新数据,devTools会有相应的数据)

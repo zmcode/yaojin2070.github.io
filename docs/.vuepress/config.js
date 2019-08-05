@@ -6,11 +6,13 @@ module.exports = {
   //GitHub的仓库
   repo: 'https://github.com/yaojin2070/yaojin2070.github.io.git',
   //头部的相应设置,兼容移动端的设置
-  head: [['link', { rel: 'icon', href: '/logo.ico' }],['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }],['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]],
   themeConfig: {
     //导航条相应的设置
     nav: [
       { text: '主页', link: '/', icon: 'reco-home' },
+
+
       {
         text: '基本用法',
         items: [
@@ -20,6 +22,8 @@ module.exports = {
           { text: 'Vue', link: '/note/Vue/' },
         ]
       },
+
+
       {
         text: '我的文章',
         items: [
@@ -29,7 +33,15 @@ module.exports = {
           { text: 'Vue', link: '/article/Vue/' },
         ]
       },
-      {text: '工作分享', link: '/work/'}
+
+
+      {
+        text: '工作分享',
+        items: [
+          { text: 'Vue', link: '/work/Vue/'},
+          { text: 'React', link: '/work/React/'},
+        ]
+      },
     ],
     //侧边栏相应配置
     sidebar: {
@@ -126,23 +138,39 @@ module.exports = {
 
 
 
-      //工作文章
-        '/work/': [
+      // 工作文章
+        '/work/Vue/': [
         ['', '介绍'],
         {
           title: 'bug',
           children: [
-            ['/work/pit/watch更新不能直接操作dom','watch更新不能直接操作dom'],
+            ['/work/Vue/pit/watch更新不能直接操作dom','watch更新不能直接操作dom'],
           ],
         },
         {
           title: '小技巧',
           children: [
-            ['/work/skill/better-scroll实现左右同步滑动','better-scroll实现左右同步滑动'],
+            ['/work/Vue/skill/better-scroll实现左右同步滑动','better-scroll实现左右同步滑动'],
           ]
         },
       ],
 
+      '/work/React/': [
+        ['', '介绍'],
+        {
+          title: 'bug',
+          children: [
+            ['/work/React/pit/没有bug','没有bug'],
+          ],
+        },
+        {
+          title: '小技巧',
+          children: [
+            ['/work/React/skill/搜索栏查找实现','搜索栏查找实现'],
+            ['/work/React/skill/一个页面多个组件','一个页面多个组件']
+          ]
+        },
+      ],
 
 
       '/': [
@@ -153,7 +181,7 @@ module.exports = {
     //头部显示logo图片
     logo:'/head.jpg',
     //GitHub更新时间
-    lastUpdated: 'Last Updated',
+    lastUpdated: '最后更新时间',
     author: '遥近',
     valineConfig: {
       visitor: true,
