@@ -145,6 +145,8 @@ module.exports = {
           title: 'bug',
           children: [
             ['/work/Vue/pit/watch更新不能直接操作dom','watch更新不能直接操作dom'],
+            ['/work/Vue/pit/betterScroll监听事件','betterScroll监听事件'],
+            ['/work/Vue/pit/Element UI 组件引入的注意','Element UI 组件引入的注意'],
           ],
         },
         {
