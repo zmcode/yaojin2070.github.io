@@ -103,6 +103,9 @@ module.exports = {
             ['/article/JavaScript/interview/call、apply、bind的区别','call、apply、bind的区别'],
             ['/article/JavaScript/interview/谈谈this的指向','谈谈this的指向'],
             ['/article/JavaScript/interview/防抖和节流实现','防抖和节流实现'],
+            ['/article/JavaScript/interview/谈谈跨越','谈谈跨越'],
+            ['/article/JavaScript/interview/作用域和作用域链','作用域和作用域链'],
+            ['/article/JavaScript/interview/变量和函数的提升','变量和函数的提升'],
           ],
         },
         {

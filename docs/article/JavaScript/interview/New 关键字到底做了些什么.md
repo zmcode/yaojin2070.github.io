@@ -32,7 +32,7 @@ date: 2019-07-23
         this.age = age;
     };
     // 调用我创建的new方法,需要传入构造函数的名字,以及对应的2个形参
-    const yaojin = _new(Person,"遥近",22);
+    const yaojin = _new(Person,"遥近",18);
     // 最后打印输出
     console.log(yaojin.__proto__ === Person.prototype);
     console.log(yaojin);
