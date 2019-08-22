@@ -172,7 +172,8 @@ module.exports = {
           title: '小技巧',
           children: [
             ['/work/React/skill/搜索栏查找实现','搜索栏查找实现'],
-            ['/work/React/skill/一个页面多个组件','一个页面多个组件']
+            ['/work/React/skill/一个页面多个组件','一个页面多个组件'],
+            ['/work/React/skill/Ant Design自定义组件样式','Ant Design自定义组件样式']
           ]
         },
       ],

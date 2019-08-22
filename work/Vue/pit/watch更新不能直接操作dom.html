@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>watch更新不能直接操作dom | 遥近个人博客</title>
+    <meta name="description" content="">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.9260abbd.css" as="style"><link rel="preload" href="/assets/js/app.0a2d3aa2.js" as="script"><link rel="preload" href="/assets/js/3.a0d8fb69.js" as="script"><link rel="preload" href="/assets/js/1.52e46082.js" as="script"><link rel="preload" href="/assets/js/47.4c9c4b5c.js" as="script"><link rel="prefetch" href="/assets/js/10.31494874.js"><link rel="prefetch" href="/assets/js/11.6458e898.js"><link rel="prefetch" href="/assets/js/12.4c91b825.js"><link rel="prefetch" href="/assets/js/13.6e6cfd08.js"><link rel="prefetch" href="/assets/js/14.14d25659.js"><link rel="prefetch" href="/assets/js/15.345fa7df.js"><link rel="prefetch" href="/assets/js/16.b238ff08.js"><link rel="prefetch" href="/assets/js/17.d6f751c6.js"><link rel="prefetch" href="/assets/js/18.07a57883.js"><link rel="prefetch" href="/assets/js/19.a2dd1893.js"><link rel="prefetch" href="/assets/js/20.6a60d4bb.js"><link rel="prefetch" href="/assets/js/21.f3f2c638.js"><link rel="prefetch" href="/assets/js/22.7b0bc833.js"><link rel="prefetch" href="/assets/js/23.5f693f30.js"><link rel="prefetch" href="/assets/js/24.bc9b46d8.js"><link rel="prefetch" href="/assets/js/25.6ca57149.js"><link rel="prefetch" href="/assets/js/26.eca3e303.js"><link rel="prefetch" href="/assets/js/27.328041be.js"><link rel="prefetch" href="/assets/js/28.427bda5c.js"><link rel="prefetch" href="/assets/js/29.01410141.js"><link rel="prefetch" href="/assets/js/30.a4013a49.js"><link rel="prefetch" href="/assets/js/31.6a29ae44.js"><link rel="prefetch" href="/assets/js/32.3aaf553a.js"><link rel="prefetch" href="/assets/js/33.98a21b33.js"><link rel="prefetch" href="/assets/js/34.3feeac05.js"><link rel="prefetch" href="/assets/js/35.7190955e.js"><link rel="prefetch" href="/assets/js/36.b8f467a3.js"><link rel="prefetch" href="/assets/js/37.a2ab279f.js"><link rel="prefetch" href="/assets/js/38.6dcd220c.js"><link rel="prefetch" href="/assets/js/39.0bbf2482.js"><link rel="prefetch" href="/assets/js/4.cc0df46c.js"><link rel="prefetch" href="/assets/js/40.88a8d42f.js"><link rel="prefetch" href="/assets/js/41.590ce2db.js"><link rel="prefetch" href="/assets/js/42.713344b3.js"><link rel="prefetch" href="/assets/js/43.ef08e009.js"><link rel="prefetch" href="/assets/js/44.13ca91da.js"><link rel="prefetch" href="/assets/js/45.a9612eef.js"><link rel="prefetch" href="/assets/js/46.2d477ff5.js"><link rel="prefetch" href="/assets/js/48.0d7edec0.js"><link rel="prefetch" href="/assets/js/49.c531d3f1.js"><link rel="prefetch" href="/assets/js/5.88f9a153.js"><link rel="prefetch" href="/assets/js/50.09561eef.js"><link rel="prefetch" href="/assets/js/6.225ae989.js"><link rel="prefetch" href="/assets/js/7.b20e3c8a.js"><link rel="prefetch" href="/assets/js/8.5cbb7990.js"><link rel="prefetch" href="/assets/js/9.082ac95a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9260abbd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/head.jpg" alt="遥近个人博客" class="logo"> <span class="site-name">遥近个人博客</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      基本用法
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/html&amp;&amp;css/" class="nav-link"><i class="iconfont undefined"></i>
+  HTML&amp;&amp;CSS
+</a></li><li class="dropdown-item"><!----> <a href="/note/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      我的文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/article/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工作分享
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/work/Vue/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/work/React/" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      基本用法
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/html&amp;&amp;css/" class="nav-link"><i class="iconfont undefined"></i>
+  HTML&amp;&amp;CSS
+</a></li><li class="dropdown-item"><!----> <a href="/note/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      我的文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/article/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工作分享
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/work/Vue/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/work/React/" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/work/Vue/" class="sidebar-link">介绍</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>bug</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/work/Vue/pit/watch更新不能直接操作dom.html" class="active sidebar-link">watch更新不能直接操作dom</a></li><li><a href="/work/Vue/pit/betterScroll监听事件.html" class="sidebar-link">betterScroll监听事件</a></li><li><a href="/work/Vue/pit/Element UI 组件引入的注意.html" class="sidebar-link">Element UI 组件引入的注意</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>小技巧</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>watch更新不能直接操作dom</h1> <hr> <div data-v-fa0e39f2><i class="iconfont reco-account" data-v-fa0e39f2><span data-v-fa0e39f2>遥近</span></i> <i class="iconfont reco-date" data-v-fa0e39f2><span data-v-fa0e39f2>2019-7-22</span></i> <span id="/work/Vue/pit/watch%E6%9B%B4%E6%96%B0%E4%B8%8D%E8%83%BD%E7%9B%B4%E6%8E%A5%E6%93%8D%E4%BD%9Cdom.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-2e99e05a data-v-fa0e39f2><i class="iconfont reco-eye" style="margin-right: .5rem" data-v-2e99e05a></i> <a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;" data-v-2e99e05a></a></span> <!----></div></div> <div class="content__default"><p>有一个shop组件一个good组件,shop组件用来从后台中请求good需要的相应数据
+可是good是shop的子组件,并且我重定向到了good,可是此时我的请求还没有回来,我的good还没有数据,此时我就想到我只能通过watch来监视我good数据</p> <p>一旦我的数据发生改变了,我就调用我对应的需要实现业务逻辑的函数,可是发现这样写是没有作用的</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>watch<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">goods</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//goods数据主要为了遍历产生li,而函数主要就是求得每个li的高度</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>一开始我的想法是,按道理来说我的数据已经请求回来了,不是可以进行遍历了吗,为什么打印我的li高度还是为0的,最终通过debugger终于找到原因了</p> <p>原来我的data里面的数据的确是更新了,但是我的dom还没进行渲染,此时仅仅只是渲染了我的虚拟dom,vue还需要对其进行diff算法优化,所以此时我的页面压根就没有遍历出li,这个跟<a href="https://www.yjdzm.com/article/Vue/interview/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html" target="_blank" rel="noopener noreferrer">生命周期<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>有关!</p> <img src="/work/Vue/watch-bug.png"> <p>太好了,终于找到对应的根源了,那么怎么处理了,此时我们只能等我页面渲染完的时候执行我的函数了,那么我们就可以用到vm.$nextTick()</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>watch<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">goods</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$nextTick</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>它的作用就在于,我的dom更新完之后立即执行里面的回调函数,这个时候我们就可以把对应的方法放进去,最终就实现我们想要的效果了!</p></div> <!----> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间: </span> <span class="time">8/5/2019, 9:49:40 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/work/Vue/" class="prev router-link-active">
+          介绍
+        </a></span> <span class="next"><a href="/work/Vue/pit/betterScroll监听事件.html">
+          betterScroll监听事件
+        </a>
+        →
+      </span></p></div> </main> <div class="valine-wrapper" data-v-0162251c><div id="valine" data-v-0162251c></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-d0bfeaa4 data-v-d0bfeaa4><i class="iconfont reco-up" data-v-d0bfeaa4></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0a2d3aa2.js" defer></script><script src="/assets/js/3.a0d8fb69.js" defer></script><script src="/assets/js/1.52e46082.js" defer></script><script src="/assets/js/47.4c9c4b5c.js" defer></script>
+  </body>
+</html>
