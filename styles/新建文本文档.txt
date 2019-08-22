@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // 点击状态
 $accentColor = #3eaf7c
 
@@ -10,16 +9,3 @@ $borderColor = #eaecef
 
 // 代码背景
 $codeBgColor = #282c34
-=======
-// 点击状态
-$accentColor = #3eaf7c
-
-// 文字
-$textColor = #2c3e50
-
-// 边框
-$borderColor = #eaecef
-
-// 代码背景
-$codeBgColor = #282c34
->>>>>>> 8e4ed000bffa1323cc71f4882508e01760c714e6
