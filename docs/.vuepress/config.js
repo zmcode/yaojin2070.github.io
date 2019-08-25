@@ -6,7 +6,10 @@ module.exports = {
   //GitHub的仓库
   repo: 'https://github.com/yaojin2070/yaojin2070.github.io.git',
   //头部的相应设置,兼容移动端的设置
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }],['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+  ],
   themeConfig: {
     //导航条相应的设置
     nav: [
@@ -129,6 +132,7 @@ module.exports = {
             ['/article/Vue/interview/MVC与MVVM的区别','MVC与MVVM的区别'],
             ['/article/Vue/interview/谈谈Vuex','谈谈Vuex'],
             ['/article/Vue/interview/data必须是函数','data必须是函数'],
+            ['/article/Vue/interview/利用vuepress搭建个人博客','利用vuepress搭建个人博客'],
           ],
         },
         {
