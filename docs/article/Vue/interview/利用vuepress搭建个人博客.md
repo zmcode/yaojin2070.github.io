@@ -38,7 +38,7 @@ date: 2019-08-25
 
 您看到的情况应该是这样的
 
-<img src='/article/vue/vuepress-teach1.png'>
+<img src='/article/Vue/vuepress-teach1.png'>
 
 # 创建配置文件 #
 
@@ -132,7 +132,7 @@ module.exports = {
 
 让我们来看下,设置完毕之后的显示效果吧,图片比较大,您可以保存来查看
 
-<img src='/article/vue/vuepress-teach2.png'>
+<img src='/article/Vue/vuepress-teach2.png'>
 
 
 # 通过第三包美化界面 #
