@@ -160,6 +160,7 @@ module.exports = {
           title: '小技巧',
           children: [
             ['/work/Vue/skill/better-scroll实现左右同步滑动','better-scroll实现左右同步滑动'],
+            ['/work/Vue/skill/element ui 日期设置小功能','element ui 日期设置小功能'],
           ]
         },
       ],

@@ -212,7 +212,9 @@ repo: 'https://github.com/您的GitHub账号名/您的GitHub账号名.github.io.
 
 切换到master分支 `git checkout master`
 
-然后在从master分支下,提取gh-pages的dist文件夹 `git checkout master dist/`
+然后在从master分支下,提取另一个分支下的dist文件夹 `git checkout 另一个分支的名称 dist/`
+
+然后您就会发现,您的master分支下多了一个dist文件夹,把文件夹的内容剪切到根目录下
 
 在master分支下,执行提交的3步骤,这样您的仓库就有2个分支,master分支专门用来展示内容的,另外一个分支专门用来开发的
 
