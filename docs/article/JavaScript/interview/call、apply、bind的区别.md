@@ -1,6 +1,6 @@
 ---
 title: call、apply、bind的区别和实现
-data: 2019-7-28
+date: 2019-7-28
 ---
 
 ## 共同点 ##

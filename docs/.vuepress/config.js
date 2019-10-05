@@ -45,6 +45,7 @@ module.exports = {
           { text: 'React', link: '/work/React/'},
         ]
       },
+        { text: '插件汇总', link: '/collect/plugIn/', icon: 'reco-npm' },
     ],
     //侧边栏相应配置
     sidebar: {
@@ -74,8 +75,9 @@ module.exports = {
         {
           title: '基本内容',
           children: [
-            ['/note/JavaScript/basic/什么是构造函数','什么是构造函数'],
-            ['/note/JavaScript/basic/了解语法糖','了解语法糖']
+            ['/note/JavaScript/basic/什么是构造函数', '什么是构造函数'],
+            ['/note/JavaScript/basic/了解语法糖', '了解语法糖'],
+            ['/note/JavaScript/basic/class基本使用', 'class基本使用']
           ],
         },
       ],
@@ -88,7 +90,8 @@ module.exports = {
           title: '基本内容',
           children: [
             ['/note/Vue/basic/Vuex的使用','Vuex的使用'],
-            ['/note/Vue/basic/name的作用','name的作用']
+            ['/note/Vue/basic/name的作用','name的作用'],
+            ['/note/Vue/basic/Module的使用','Vuex(Module)的使用'],
           ],
         },
       ],
@@ -181,10 +184,6 @@ module.exports = {
             ['/work/React/skill/Ant Design自定义组件样式','Ant Design自定义组件样式']
           ]
         },
-      ],
-
-
-      '/': [
       ]
     },
     //取消标题显示二级页面
