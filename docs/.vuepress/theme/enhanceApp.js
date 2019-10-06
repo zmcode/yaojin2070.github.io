@@ -1,4 +1,6 @@
+import Ant from 'ant-design-vue'
 import BootstrapVue from 'bootstrap-vue'
+import 'ant-design-vue/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import feather from 'vue-icon'
@@ -9,6 +11,7 @@ export default ({
     siteData // 站点元数据
 }) => {
     Vue.use(BootstrapVue);
+    Vue.use(Ant);
     Vue.use(feather, 'v-icon');
     Vue.prototype.$siteData = siteData
     Vue.prototype.$themeConfig = siteData.themeConfig.valineConfig

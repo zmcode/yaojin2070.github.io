@@ -10,5 +10,6 @@ module.exports = (options, ctx) => ({
             .oneOf('modules')
             .use('less-loader')
             .options({ javascriptEnabled: true });
+
     }
 });

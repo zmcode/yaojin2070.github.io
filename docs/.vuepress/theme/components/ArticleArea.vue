@@ -1,20 +1,34 @@
 <template>
-    <div>
-        <div class="theme-container">
-            <Content/>
-        </div>
-    </div>
-
+    <b-container class="bv-example-row">
+        <b-row>
+            <b-col
+            >
+                <div class="theme-container">
+                    <Content/>
+                </div>
+            </b-col>
+        </b-row>
+    </b-container>
 </template>
 
 <script>
     import '../styles/code.styl'
     import '../styles/index.styl'
     export default {
-        name: "ArticleArea"
+        name: "ArticleArea",
+        data () {
+            return {
+            }
+        }
     }
 </script>
 
-<style scoped>
-
+<style lang="less">
+.theme-container{
+    .content__default{
+        img {
+            max-width: 100%;
+        }
+    }
+}
 </style>

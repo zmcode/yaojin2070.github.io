@@ -14,8 +14,8 @@
                     <b-popover target="popover-target-1" triggers="focus" placement="top">
                         <template v-slot:title>搜索内容</template>
                         <b-nav vertical  small v-if="searchData.length > 0">
-                            <!--<a :href="item.path"  v-for="(item, index) in searchData" :key="index">{{item.title}}</a>-->
-                            <b-nav-item :to="item.path"  v-for="(item, index) in searchData" :key="index">{{item.title}}</b-nav-item>
+                            <a :href="item.path"  v-for="(item, index) in searchData" :key="index">{{item.title}}</a>
+                            <!--<b-nav-item :to="item.path"  v-for="(item, index) in searchData" :key="index">{{item.title}}</b-nav-item>-->
                         </b-nav>
                         <strong v-else>输入文章标题进行快速搜索</strong>
                     </b-popover>

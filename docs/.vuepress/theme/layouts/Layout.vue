@@ -28,15 +28,6 @@
         },
         created() {
             this.getDropPath()
-            this.$bvModal.msgBoxOk('博客重构中~~~', {
-                title: '提示信息',
-                size: 'sm',
-                buttonSize: 'sm',
-                okVariant: 'success',
-                headerClass: 'p-2 border-bottom-0',
-                footerClass: 'p-2 border-top-0',
-                centered: true
-            })
         },
         methods: {
             // 获取所有下拉菜单的地址

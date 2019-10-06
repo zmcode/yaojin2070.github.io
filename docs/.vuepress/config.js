@@ -77,7 +77,7 @@ module.exports = {
           children: [
             ['/note/JavaScript/basic/什么是构造函数', '什么是构造函数'],
             ['/note/JavaScript/basic/了解语法糖', '了解语法糖'],
-            ['/note/JavaScript/basic/class基本使用', 'class基本使用']
+            // ['/note/JavaScript/basic/class基本使用', 'class基本使用']
           ],
         },
       ],
@@ -91,7 +91,7 @@ module.exports = {
           children: [
             ['/note/Vue/basic/Vuex的使用','Vuex的使用'],
             ['/note/Vue/basic/name的作用','name的作用'],
-            ['/note/Vue/basic/Module的使用','Vuex(Module)的使用'],
+            // ['/note/Vue/basic/Module的使用','Vuex(Module)的使用'],
           ],
         },
       ],
@@ -129,7 +129,7 @@ module.exports = {
         {
           title: '文章',
           children: [
-            ['/article/Vue/interview/Vue的数据代理','Vue的数据代理?'],
+            // ['/article/Vue/interview/Vue的数据代理','Vue的数据代理?'],
             ['/article/Vue/interview/vue的生命周期','vue的生命周期'],
             ['/article/Vue/interview/computed和watch的区别','computed和watch的区别'],
             ['/article/Vue/interview/MVC与MVVM的区别','MVC与MVVM的区别'],

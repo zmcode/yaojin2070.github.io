@@ -5,39 +5,15 @@
             <h2>贴近您心,想您所想</h2>
             <span>信心来自实力,实力来自勤奋</span>
         </div>
+        <b-alert
+            :show="4"
+            class="AlertStyle"
+        >
+            {{`目前文章总数${this.ArticleNum}`}}
+        </b-alert>
         <div class="articleRec">
-            <b-card title="置顶" sub-title="vuepress">
-                <b-card-text>
-                    Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-                    content.
-                </b-card-text>
-
-                <b-card-text>A second paragraph of text in the card.</b-card-text>
-
-                <a href="#" class="card-link">Card link</a>
-                <b-link href="#" class="card-link">Another link</b-link>
-            </b-card>
-            <b-card title="置顶" sub-title="vuepress">
-                <b-card-text>
-                    Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-                    content.
-                </b-card-text>
-
-                <b-card-text>A second paragraph of text in the card.</b-card-text>
-
-                <a href="#" class="card-link">Card link</a>
-                <b-link href="#" class="card-link">Another link</b-link>
-            </b-card>
-            <b-card title="置顶" sub-title="vuepress">
-                <b-card-text>
-                    Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-                    content.
-                </b-card-text>
-
-                <b-card-text>A second paragraph of text in the card.</b-card-text>
-
-                <a href="#" class="card-link">Card link</a>
-                <b-link href="#" class="card-link">Another link</b-link>
+            <b-card :title="item.frontmatter.title" v-for="(item, index) in NewArticle.slice(0,4)">
+                <a :href="item.path" class="card-link">马上查看</a>
             </b-card>
         </div>
         <div class="footer">
@@ -63,6 +39,46 @@
     import '../styles/text.css'
     export default {
         name: "myHome",
+        created() {
+            let data = this.$siteData.pages;
+            console.log(data)
+            // 过滤没有date的数据,防止报错
+            data.forEach((item) => {
+                if (item.frontmatter.date && item.frontmatter.title !== '介绍') {
+                    this.NewArticle.push(item)
+                } else {}
+            });
+            // 对日期格式化
+            this.NewArticle.map((item) => {
+                if (item.frontmatter.date.indexOf('T') !== -1) {
+                    item.frontmatter.date = item.frontmatter.date.substr(0, item.frontmatter.date.lastIndexOf('T'))
+                    item.frontmatter.date = item.frontmatter.date.replace(/-/g, ' ')
+                    item.frontmatter.date = Date.parse(item.frontmatter.date)
+                } else {
+                    item.frontmatter.date = item.frontmatter.date.replace(/-/g, ' ')
+                    item.frontmatter.date = Date.parse(item.frontmatter.date)
+                }
+            });
+            this.NewArticle.sort((a, b) => {
+                return b.frontmatter.date - a.frontmatter.date
+            });
+            this.ArticleNum = this.NewArticle.length;
+            // this.$notification.open({
+            //     message: '文章数量',
+            //     description: `目前文章数量${this.ArticleNum}`,
+            //     placement: 'bottomRight',
+            //     onClick: () => {
+            //     },
+            // });
+        },
+        data () {
+            return {
+                NewArticle: [],
+                ArticleNum: 0
+            }
+        },
+        methods: {
+        }
     }
 </script>
 
@@ -122,7 +138,13 @@
             cursor:pointer;
         }
     }
-
+    .AlertStyle{
+        width: 10%;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        text-align: center;
+    }
     @keyframes TextAnim {
         from {top:100px;}
         to {top:0;}
