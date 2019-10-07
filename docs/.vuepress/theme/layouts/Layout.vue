@@ -48,6 +48,7 @@
 
 <style>
     body, html {
+        background-color: #e9ecef;
         font-family: "vueText" !important;
     }
 </style>

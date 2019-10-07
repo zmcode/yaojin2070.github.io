@@ -12,7 +12,7 @@
             {{`目前文章总数${this.ArticleNum}`}}
         </b-alert>
         <div class="articleRec">
-            <b-card :title="item.frontmatter.title" v-for="(item, index) in NewArticle.slice(0,4)">
+            <b-card :title="item.title" v-for="(item, index) in NewArticle.slice(0,4)">
                 <a :href="item.path" class="card-link">马上查看</a>
             </b-card>
         </div>
@@ -63,13 +63,8 @@
                 return b.frontmatter.date - a.frontmatter.date
             });
             this.ArticleNum = this.NewArticle.length;
-            // this.$notification.open({
-            //     message: '文章数量',
-            //     description: `目前文章数量${this.ArticleNum}`,
-            //     placement: 'bottomRight',
-            //     onClick: () => {
-            //     },
-            // });
+            this.NewArticle.slice(0, 4)
+            console.log( this.NewArticle.slice(0, 4))
         },
         data () {
             return {
