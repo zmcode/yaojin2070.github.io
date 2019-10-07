@@ -13,7 +13,7 @@
         </b-alert>
         <div class="articleRec">
             <b-card :title="item.title" v-for="(item, index) in NewArticle.slice(startNum,EndNum).slice(0, 4)">
-                <a :href="item.path" class="card-link">马上查看</a>
+                <b-button :href="item.path" variant="primary">查看</b-button>
             </b-card>
         </div>
         <div class="footer">
