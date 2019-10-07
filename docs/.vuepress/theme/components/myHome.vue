@@ -12,7 +12,7 @@
             {{`目前文章总数${this.ArticleNum}`}}
         </b-alert>
         <div class="articleRec">
-            <b-card :title="item.title" v-for="(item, index) in NewArticle.slice(0,4)">
+            <b-card :title="item.title" v-for="(item, index) in NewArticle.slice(startNum,EndNum).slice(0, 4)">
                 <a :href="item.path" class="card-link">马上查看</a>
             </b-card>
         </div>
@@ -40,39 +40,56 @@
     export default {
         name: "myHome",
         created() {
-            let data = this.$siteData.pages;
-            console.log(data)
-            // 过滤没有date的数据,防止报错
-            data.forEach((item) => {
-                if (item.frontmatter.date && item.frontmatter.title !== '介绍') {
-                    this.NewArticle.push(item)
-                } else {}
-            });
+            this.getNum()
             // 对日期格式化
-            this.NewArticle.map((item) => {
-                if (item.frontmatter.date.indexOf('T') !== -1) {
-                    item.frontmatter.date = item.frontmatter.date.substr(0, item.frontmatter.date.lastIndexOf('T'))
-                    item.frontmatter.date = item.frontmatter.date.replace(/-/g, ' ')
-                    item.frontmatter.date = Date.parse(item.frontmatter.date)
-                } else {
-                    item.frontmatter.date = item.frontmatter.date.replace(/-/g, ' ')
-                    item.frontmatter.date = Date.parse(item.frontmatter.date)
-                }
-            });
-            this.NewArticle.sort((a, b) => {
-                return b.frontmatter.date - a.frontmatter.date
-            });
-            this.ArticleNum = this.NewArticle.length;
-            this.NewArticle.slice(0, 4)
-            console.log( this.NewArticle.slice(0, 4))
+            // this.NewArticle.map((item) => {
+            //     if (item.frontmatter.date.indexOf('T') !== -1) {
+            //         item.frontmatter.date = item.frontmatter.date.substr(0, item.frontmatter.date.lastIndexOf('T'))
+            //         item.frontmatter.date = item.frontmatter.date.replace(/-/g, ' ')
+            //         item.frontmatter.date = Date.parse(item.frontmatter.date)
+            //     } else {
+            //         item.frontmatter.date = item.frontmatter.date.replace(/-/g, ' ')
+            //         item.frontmatter.date = Date.parse(item.frontmatter.date)
+            //     }
+            // });
+            // this.NewArticle.sort((a, b) => {
+            //     return b.frontmatter.date - a.frontmatter.date
+            // });
+            // this.ArticleNum = this.NewArticle.length;
+            // this.NewArticle.slice(0, 4)
+            // console.log( this.NewArticle.slice(0, 4))
         },
         data () {
             return {
                 NewArticle: [],
-                ArticleNum: 0
+                ArticleNum: 0,
+                startNum:'',
+                EndNum: ''
             }
         },
         methods: {
+            getNum() {
+                let data = this.$siteData.pages;
+                console.log(data)
+                // 过滤没有date的数据,防止报错
+                data.forEach((item) => {
+                    if (item.frontmatter.date && item.frontmatter.title !== '介绍') {
+                        this.NewArticle.push(item)
+                    } else {}
+                });
+                this.ArticleNum = this.NewArticle.length;
+                this.startNum = Math.floor(Math.random()*this.ArticleNum)
+                this.EndNum = Math.floor(Math.random()*this.ArticleNum)
+                 if (this.startNum > this.EndNum) {
+                     let start = this.startNum
+                     let end = this.EndNum
+                     this.EndNum = start;
+                     this.startNum = end;
+
+                     
+                 }
+                console.log(this.startNum, this.EndNum)
+            }
         }
     }
 </script>
