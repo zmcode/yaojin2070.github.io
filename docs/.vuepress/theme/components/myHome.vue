@@ -70,26 +70,28 @@
         methods: {
             getNum() {
                 let data = this.$siteData.pages;
-                console.log(data)
                 // 过滤没有date的数据,防止报错
                 data.forEach((item) => {
                     if (item.frontmatter.date && item.frontmatter.title !== '介绍') {
                         this.NewArticle.push(item)
                     } else {}
                 });
+                console.log(this.NewArticle);
                 this.ArticleNum = this.NewArticle.length;
-                this.startNum = Math.floor(Math.random()*this.ArticleNum)
-                this.EndNum = Math.floor(Math.random()*this.ArticleNum)
+                this.startNum = Math.floor(Math.random()*this.ArticleNum);
+                this.EndNum = Math.floor(Math.random()*this.ArticleNum);
                  if (this.startNum > this.EndNum) {
-                     let start = this.startNum
-                     let end = this.EndNum
+                     let start = this.startNum;
+                     let end = this.EndNum;
                      this.EndNum = start;
                      this.startNum = end;
-
-                     
                  }
                 console.log(this.startNum, this.EndNum)
             }
+        },
+        mounted() {
+            console.log(this.NewArticle, 'mounted');
+            console.log(this.startNum, this.EndNum, 'mounted')
         }
     }
 </script>
