@@ -25,7 +25,7 @@
     "less-loader": "^5.0.0",
     "muse-ui": "^3.0.2",
     "vue-icon": "^2.1.1",
-    "vuepress-theme-reco": "^1.0.2",
+    "vuepress-theme-reco": "^1.6.14",
     "vuepress-theme-tassel": "^1.1.9"
   }
 }
